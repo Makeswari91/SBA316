@@ -10,3 +10,8 @@ const inputs = document.querySelectorAll('#studyForm input, #studyForm select');
 setTimeout(() => {
   alert('Ready to focus and crush your goals?');
 }, 3000);//executes after 3 seconds
+
+// BOM property for users to take short breaks
+setInterval(() => {
+  console.log('Tip: Take short breaks to stay sharp!');
+}, 30000);//executes after 3 seconds
