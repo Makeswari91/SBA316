@@ -43,3 +43,26 @@ button {
   border: 1px solid #ccc;
 }
 
+button:hover {
+  background: #1b4f72;
+}
+
+.highlight {
+  background-color: #d6eaf8;
+}
+
+#planSection {
+  max-width: 500px;
+  margin: 30px auto;
+  background: #d5f5e3;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.plan-card {
+  background: #fff;
+  border: 2px solid #2e86de;
+  padding: 15px;
+  border-radius: 8px;
+}
+
