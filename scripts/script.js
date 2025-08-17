@@ -55,3 +55,8 @@ const goal = document.getElementById('goal');
 
   goal.setAttribute('placeholder', 'Goal noted!'); //modify attribute
 
+// Create new element
+  const planCard = document.createElement('div');
+  planCard.classList.add('plan-card'); //modify classlist
+
+  
