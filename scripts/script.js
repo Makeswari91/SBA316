@@ -75,3 +75,14 @@ fragment.appendChild(clone); //appendchild
   resultContainer.appendChild(fragment);
   section.classList.remove('hidden');
 });
+
+// Using parent-child-sibling navigation
+console.log('First child of form:', form.firstChild);
+console.log('Last child of form:', form.lastChild);
+console.log('Parent of duration input:', document.getElementById('duration').parentNode);
+
+// Using helper function to generate study plan text
+function generatePlan(subject, duration, goal, breaks) {
+  let breakInfo = breaks ? ' with 5-min breaks every 25 mins' : '';
+  return `Study ${subject} for ${duration} mins${breakInfo} — Goal: ${goal}`;
+}
