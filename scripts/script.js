@@ -15,3 +15,13 @@ setTimeout(() => {
 setInterval(() => {
   console.log('Tip: Take short breaks to stay sharp!');
 }, 30000);//executes after 3 seconds
+
+// Adding event listeners
+inputs.forEach((input) => {
+  input.addEventListener('focus', () => {
+    input.classList.add('highlight');
+  });
+  input.addEventListener('blur', () => {
+    input.classList.remove('highlight');
+  });
+});
