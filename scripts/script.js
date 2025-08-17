@@ -25,3 +25,8 @@ inputs.forEach((input) => {
     input.classList.remove('highlight');
   });
 });
+
+// Form submission handler
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+})
