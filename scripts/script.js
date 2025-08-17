@@ -30,3 +30,9 @@ inputs.forEach((input) => {
 form.addEventListener('submit', (e) => {
   e.preventDefault();
 })
+
+//Get form values
+const subject = document.getElementById('subject');
+const duration = document.getElementById('duration');
+const goal = document.getElementById('goal');
+const breaks = document.getElementById('breaks');
