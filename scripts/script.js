@@ -35,4 +35,23 @@ form.addEventListener('submit', (e) => {
 const subject = document.getElementById('subject');
 const duration = document.getElementById('duration');
 const goal = document.getElementById('goal');
-const breaks = document.getElementById('breaks');
+ const breaks = document.getElementById('breaks');
+
+ //DOM event-based validation
+  let valid = true;
+  [subject, duration, goal].forEach((input) => {
+    if (!input.value.trim()) {
+      input.style.border = '2px solid red'; //modify style
+      valid = false;
+    } else {
+      input.style.border = '';
+    }
+  });
+
+  if (!valid) {
+    alert('Please complete all required fields');
+    return;
+  }
+
+  goal.setAttribute('placeholder', 'Goal noted!'); //modify attribute
+
