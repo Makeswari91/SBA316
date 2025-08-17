@@ -29,7 +29,6 @@ inputs.forEach((input) => {
 // Form submission handler
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-})
 
 //Get form values
 const subject = document.getElementById('subject');
@@ -70,3 +69,9 @@ template.innerHTML =
     <p>Breaks: ${breaks.checked ? 'Yes' : 'No'}</p>`;
 const clone = template.cloneNode(true);
 fragment.appendChild(clone); //appendchild
+
+// Modify innerHTML
+  resultContainer.innerHTML = '';
+  resultContainer.appendChild(fragment);
+  section.classList.remove('hidden');
+});

@@ -5,5 +5,8 @@
  -- Plan each feature step by step before coding.
  -- Keeping the code organized will make us easy to update later.
  -- Write down what each feature should do clearly.
+// what would you add to, or change about your application if given more time?
+ -- A countdown timer to help users stay on track during their session.
+ -- Alert users when it’s time to take a break or switch subjects.
 
 
