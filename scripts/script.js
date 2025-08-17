@@ -59,4 +59,14 @@ const goal = document.getElementById('goal');
   const planCard = document.createElement('div');
   planCard.classList.add('plan-card'); //modify classlist
 
-  
+// Using DocumentFragment and cloneNode for templating
+const fragment = document.createDocumentFragment();
+const template = document.createElement('div');
+template.innerHTML = 
+    `<h3>${generatePlan(subject.value, duration.value, goal.value, breaks.checked)}</h3>
+    <p>Subject: ${subject.value}</p>
+    <p>Duration: ${duration.value} minutes</p>
+    <p>Goal: ${goal.value}</p>
+    <p>Breaks: ${breaks.checked ? 'Yes' : 'No'}</p>`;
+const clone = template.cloneNode(true);
+fragment.appendChild(clone); //appendchild
